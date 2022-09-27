@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Pro-labore</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="main">
+        <h2>Calculadora de Pro-Labore</h2>
+        <div class="content">
+          <label for="">
+            Valor do pro-labore:
+            <input
+              type="number"
+              id="pro-labore"
+              min="91"
+              value="1212.00"
+              step="0.01"
+              required
+            />
+          </label>
+          <label id="inss" for=""></label>
+          <label id="irrf" for=""></label>
+        </div>
+        <div class="button" onclick="calculateProlabore()">Calcular</div>
+      </section>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
